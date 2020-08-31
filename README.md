@@ -29,3 +29,6 @@ Error Code | Error
 
 ## Reference
 [Kodular community](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264)
+
+## Note
+This extension is made in appybuilder code editor.
