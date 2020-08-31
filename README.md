@@ -28,3 +28,4 @@ Error Code | Error
 4 | Unknown error, output is empty
 
 ## Reference
+[Kodular community](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264)
