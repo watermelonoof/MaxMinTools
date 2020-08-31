@@ -5,7 +5,6 @@ import com.google.appinventor.components.runtime.*;
 import com.google.appinventor.components.common.ComponentCategory;
 
 import com.google.appinventor.components.runtime.util.YailList;
-import com.google.appinventor.components.runtime.errors.YailRuntimeError;
 
 import java.util.Arrays;
 import java.util.ArrayList;
