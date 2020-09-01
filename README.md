@@ -27,9 +27,9 @@ Error Code | Error
 4 | Unknown error, output is empty
 
 ## Change Log
-[details="Version 2"]
-- Return "error" instead of empty string when error occurred.
-- Code optimized, suggested by @Mohamed_Tamer in Kodular community. Related post [here](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264/17?u=watermelonice)
+Version | Changelog
+2 | - Return "error" instead of empty string when error occurred.
+    - Code optimized, suggested by @Mohamed_Tamer in Kodular community. Related post [here](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264/17?u=watermelonice)
 [/details]
 
 ## Reference
