@@ -5,6 +5,7 @@ import com.google.appinventor.components.runtime.*;
 import com.google.appinventor.components.common.ComponentCategory;
 
 import com.google.appinventor.components.runtime.util.YailList;
+import com.google.appinventor.components.runtime.errors.YailRuntimeError;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Collections;
 import java.math.BigDecimal;
 
-@DesignerComponent(version = 1,  description = "This Extension was created to get maximum/minimum value of a list. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
+@DesignerComponent(version = 2,  description = "This Extension was created to get maximum/minimum value of a list. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
         category = ComponentCategory.EXTENSION,
         nonVisible = true,   iconName = "https://lh3.googleusercontent.com/fife/ABSRlIrbdVhN_DWUrikiuOM3CqaPhAnZzX2t0rkZ4f0VZ61TvUNjwRAVa4PfOxw44NOfDvipC7_YvARRTniZnHHbKC-1FImQhG7NFzpgJ26HB8E0VCIgBKgYFQKUAecg0m-Y92YazOw_p6nWmjxWEsEKbsLhAN3iXzG7YwABK3XydABEzBf_i4OcTdGChwzuHLFwqzmuWr1eRd-AlQteGOk2-GMcLuYksBgkxrkdpWy7qNd-JwPJ1EV_MISf65jHiZcGhlJ7jy4I837jqtP2ZNf1UM5hFJzunNMsgPFohH1JxZ-zmjlrY0oW-2e4jMTUIwaxvqTfId90pSjl8CjPPtuERHR5FUK556MnuYlEvUBIZe1m4Tl6aKjo9jT8gZxAS1-wewEMCdJtbaezPESs3dZylg1krNoBuYQ07-Hjgw29gTpIwxCz174M3iNJ_5UhpP0Qu3QRZWYbFb1NKAjU2a9ySsRLZQMdqFyUbxEdWUIYG06c3ApmbOcBWGsZcE7K2d_nVeXz_iMCUihNzV004J_gMNlH2MB4PT6xVlzfuNlDGMjihdZGlgFUS98qK1_LabDvziaR8RLHpKn02tJLxJYgaQ0akmKwC_ETVHrwe2WNelRYcJlVxoHWpCtS5jerQ-GAgM1buZP9paxpfN4lZcmXUJ8toKXS-jEFVKL8YCS52-fmtd-RcUimzf-LXN1O3FQQYSSS_kbeeenj9ctuOOnRwR6kAa_VtzvKjQ=w1920-h902-ft")
 @SimpleObject(external = true)
@@ -65,32 +66,26 @@ public class MaxMinTools extends AndroidNonvisibleComponent {
       String error = null;
       String exceptionError = null;
       int errorCode = -1;
-      Boolean runCode = true; //After checking whether inputs valid, return true if no problem, otherwise false
       String result = "";
       
       if (num != 0 && num != 1) {
         
         error = "Input method should either be 0 or 1";
         errorCode = 0;
-        runCode = false;
           
       } else if (!(list instanceof YailList)) {
         
         error = "Input list should be a list";
         errorCode = 1;
-        runCode = false;
         
       } else if (list.size() == 0) {
         
         error = "Input list cannot be empty";
         errorCode = 2;
-        runCode = false;
         
-	  }
-      
-      try {
+	  } else {
+      	try {
         
-        if (runCode) {
          List arrList = Arrays.asList(list.toArray());
          List<BigDecimal> arr = new ArrayList<BigDecimal>();
         
@@ -100,25 +95,27 @@ public class MaxMinTools extends AndroidNonvisibleComponent {
         	}
 		
         	result = (num == 0 ? Collections.min(arr) : Collections.max(arr)).stripTrailingZeros().toPlainString();  
-        }
-        
-      } catch (Exception e){
+          
+      	} catch (Exception e){
         
         exceptionError = e.getMessage();
-      }
-      
-      if (runCode) {
-        if (exceptionError != null) {
-            error = exceptionError;
-        	errorCode = 3;
-        } else if (result.isEmpty()) {
-        	error = "Unknown error, output is empty";
-        	errorCode = 4;
+          
+      	} finally {
+          
+          	if (exceptionError != null) {
+            	error = exceptionError;
+        		errorCode = 3;
+        	} else if (result.isEmpty()) {
+        		error = "Unknown error, output is empty";
+        		errorCode = 4;
+        	}
         }
+        
       }
-      
+
       if (error != null) {
         ErrorOccurred(error, errorCode);
+        result = "error";
       }
         
       return result;
