@@ -30,7 +30,7 @@ Error Code | Error
 
 ### Version 3
 * Image resized to 16x16
-* Removed unecessary code
+* Removed unnecessary code
 
 <hr>
 
