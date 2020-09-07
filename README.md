@@ -27,9 +27,17 @@ Error Code | Error
 4 | Unknown error, output is empty
 
 ## Change Log
-Version 2
+
+### Version 3
+* Image resized to 16x16
+* Removed unecessary code
+
+<hr>
+
+### Version 2
 * Return "error" instead of empty string when error occurred.
 * Code optimized, suggested by @Mohamed_Tamer in Kodular community. Related post [here](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264/17?u=watermelonice)
+
 <hr>
  
 ## Reference
