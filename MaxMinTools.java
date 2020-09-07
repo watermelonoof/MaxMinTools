@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Collections;
 import java.math.BigDecimal;
 
-@DesignerComponent(version = 2,  description = "This Extension is created to get maximum/minimum value of a list. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
+@DesignerComponent(version = 3,  description = "This Extension is created to get maximum/minimum value of a list. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
         category = ComponentCategory.EXTENSION,
         nonVisible = true,   iconName = "https://lh5.googleusercontent.com/iUrGv0BDLUPZZeqrMcs3jLssBiYBpdWuOFBGAEMb4sxEi6TpyB7Akv1wgrB8KHXOUR7AhA3jo1upL3kvzuOt=w1920-h902")
 @SimpleObject(external = true)
