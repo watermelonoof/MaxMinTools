@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 @DesignerComponent(version = 3,  description = "This Extension is created to get maximum/minimum value of a list. <br> Craeted by WatermelonIce <br><br> <b>My Profile in Kodular Community: </b><a href=\"https://community.kodular.io/u/WatermelonIce/summary\">My Profile</a><br><b>Support me by subscribing my YouTube Channel: </b> <a href=\"https://www.youtube.com/channel/UCBq9ouxr4C4OZG0sMCgmpwg\">WatermelonIce YouTube Channel</a>",
         category = ComponentCategory.EXTENSION,
-        nonVisible = true,   iconName = "https://lh5.googleusercontent.com/iUrGv0BDLUPZZeqrMcs3jLssBiYBpdWuOFBGAEMb4sxEi6TpyB7Akv1wgrB8KHXOUR7AhA3jo1upL3kvzuOt=w1920-h902")
+        nonVisible = true,   iconName = "https://lh3.googleusercontent.com/fife/ABSRlIpGLpd4j2JR5Sj18VzKiqAI6yFZDoGt64st7LyFMiiKYiNo1BrqIZLf_1XJz2reXVzKySL1w9-IMluKRJNVzpMm8WiR2S9FOrW4o1p5pWHnrjOMQQHKOLov3q7oMbfgLT9qv8mtiJYm_NUdBJFNFX5BQ9HdGeRWj9geODt7_Mymese6cwjtExYp9cMwr30OcQV6_BiMAGv-V9eEVOvqDg_QBGtijt-kYrYIeFbhbimAFswSj9KjJPRi7KbVOBu0lwvxA8Zxa13AtEZhwQVZAHW8PGfT7ABQmatTymgleSzy2b_wng-VPb5ZBRJKA_5Ei-5MZjkRx8guGXPWRHOLfu0-TSVu7VnJRbl91ORqPYRcs6sTsLstH7CtHAMJZiHamJD3l1OAOP637FVszWG2yVg8zRpCIqwUKYgh-kGvXWSC5vhGFQeCO4GbegMPtYDN5Jjba3_BFrsopM64px5nxKVUA-9w2HzBEXCF6FnXxX_hYI-Etg92S9-3Zttofa0DSIuM_QkRS1rD8AZgVjw4UPAJU3qE4alM0Dn6vxw0Q6WjEId8M4_BcJkKPCawJQhKluUGWgYsfoBla4UjT-n5azDeDtnVyNwbUuCUXCqtJ5-UWM4GSeDsVM5M4t5ZYgJ2wi8bs7vRpn2Gr_nFG6F-au8kpjdSOROtb-1LRgf1M83d8sycWzCyBiH2NimbfG-M9YaVru8-ZWM1Sj3vpn0fQMbemh5XpGrptg=w1920-h902-ft")
 @SimpleObject(external = true)
 public class MaxMinTools extends AndroidNonvisibleComponent {
     private ComponentContainer container;
