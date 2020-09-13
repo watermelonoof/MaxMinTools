@@ -1,6 +1,6 @@
 # MaxMinTools-AI2-Kodular-Extension
 Simple extension for getting Maximum/Minimum value of YailList
-<b>Version 2</b>
+<b>Version 3</b>
 
 <hr>
 
