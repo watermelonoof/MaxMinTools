@@ -1,10 +1,9 @@
 # MaxMinTools-AI2-Kodular-Extension
 Simple extension for getting Maximum/Minimum value of YailList
-<b>Version 3</b>
 
 <hr>
 
-## Blocks:
+## Blocks
 ![blocks.png](/blocks.png)
 
 ## Description
@@ -26,7 +25,7 @@ Error Code | Error
 3 | Exception error
 4 | Unknown error, output is empty
 
-## Change Log
+## Changelog
 
 ### Version 3
 * Image resized to 16x16
@@ -37,8 +36,6 @@ Error Code | Error
 ### Version 2
 * Return "error" instead of empty string when error occurred.
 * Code optimized, suggested by @Mohamed_Tamer in Kodular community. Related post [here](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264/17?u=watermelonice)
-
-<hr>
  
 ## Reference
 [Kodular community](https://community.kodular.io/t/free-open-source-max-min-value-of-list-my-first-extension/81264)
