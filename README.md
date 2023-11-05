@@ -1,4 +1,4 @@
-# MaxMinTools-AI2-Kodular-Extension
+# MaxMinTools Extension for App Inventor 2
 Simple extension for getting Maximum/Minimum value of YailList
 
 <hr>
